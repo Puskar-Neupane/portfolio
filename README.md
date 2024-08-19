@@ -1,35 +1,30 @@
-# Puskar Neupane - Personal Website
+# Puskar Neupane - Electrical Engineer, Researcher
 
-Welcome to my personal website hosted on GitHub Pages. This website showcases my work, research, and experiences as an Electrical Engineer and Researcher.
+This is the personal website of Puskar Neupane, an Electrical Engineer and Researcher with expertise in renewable energy, power systems, and the integration of machine learning and AI in electrical engineering. The website showcases his publications, projects, and professional experience.
 
-## Website Structure
+## How to Use This Repository
 
-### 1. Header Section
-- **Profile Photo**: A circular, transparent photo of myself is displayed on the top left, with a splash of blur color in the background to create a soft, modern look.
-- **Name and Profession**: Directly below the photo, my name "Puskar Neupane" is prominently displayed, followed by my profession "Electrical Engineer, Researcher."
-- **Navigation Bar**: On the top right, there is a horizontal navigation bar with the following sections:
-  - **Publications**: Links to my research papers and articles.
-  - **Projects**: Showcases the projects I have worked on.
-  - **Experience**: Details my professional experience.
-  - **Other**: Any additional relevant information.
+This repository is intended to be deployed on GitHub Pages. You can explore the website by visiting [https://puskar-neupane.github.io/](https://puskar-neupane.github.io/) once it's published.
 
-### 2. About Me Section
-Just below the navigation bar, you will find a brief introduction about myself:
-- A concise 5-6 line description that highlights who I am, my professional background, and my key interests.
+### Structure
 
-## Usage
+- `index.html`: The main page of the website.
+- `style.css`: The stylesheet that controls the appearance of the website.
+- `README.md`: This file, which contains information about the repository.
 
-- The navigation bar is fully responsive and allows for smooth transitions between the different sections of the website.
-- The website is designed to be clean and professional, with an emphasis on clarity and ease of navigation.
+### Customization
 
-## Development
+Feel free to fork this repository and customize it to suit your needs. You can change the content, style, and structure as you see fit.
 
-This website was developed using HTML, CSS, and JavaScript, with GitHub Pages as the hosting platform.
+### Deployment
+
+To deploy this website on GitHub Pages:
+1. Fork this repository to your own GitHub account.
+2. Rename the repository to `yourusername.github.io`.
+3. Enable GitHub Pages in the repository settings.
+
+Your website will be live at `https://yourusername.github.io/`.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Contact
-
-For any inquiries, please contact me at [your-email@example.com].
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
