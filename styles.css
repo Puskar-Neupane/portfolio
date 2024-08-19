@@ -1,85 +1,74 @@
-/* Global Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-header {
-    position: relative;
-    height: 100vh;
-    background: url('background.jpg') no-repeat center top;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    color: #333;
 }
 
-header .profile-photo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border-radius: 20%;
-    overflow: hidden;
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Profile Photo Styles */
+.profile-photo img {
+    border-radius: 50%;
     width: 50px;
     height: 50px;
+    border: 10px solid white;
 }
 
-header .profile-photo img {
-    width: 100%;
-    height: auto;
+/* Profile Info Styles */
+.profile-info {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: white;
 }
 
-header .profile-info {
-    position: absolute;
-    top: 20px;
-    left: 200px;
-    color: #fff;
-}
-
-header .profile-info h1 {
+.profile-info h1 {
     margin: 0;
     font-size: 2.5em;
 }
 
-header .profile-info h2 {
+.profile-info h2 {
     margin: 0;
     font-size: 1.5em;
+    font-weight: 300;
 }
 
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
+/* Navigation Styles */
 nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
     gap: 15px;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: white;
     font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Sections */
+/* Section Styles */
 section {
-    padding: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
     margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Add space between sections */
 }
 
 section h2 {
@@ -87,60 +76,39 @@ section h2 {
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 1.1em;
-}
-
-/* Social Media Section Styles */
-#social-media {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-#social-media h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.social-icons a {
-    text-decoration: none;
-}
-
-.social-icons img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
-    margin: 0 10px; /* Space between icons */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
-    opacity: 0.8; /* Slightly fade the icon on hover */
-}
-
-/* Publications and Other Sections */
-ul {
+section ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 20px;
+section ul li {
+    margin-bottom: 25px; /* Add space between list items */
 }
 
-ul li a {
-    color: #007bff;
-    text-decoration: none;
+section ul li strong {
+    display: block;
+    font-size: 1.2em;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+section ul li em {
+    display: block;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
