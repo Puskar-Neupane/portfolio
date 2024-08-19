@@ -110,7 +110,7 @@ section ul li em {
 .social-links img {
     width: 24px; /* Adjust size */
     height: 24px; /* Adjust size */
-    vertical-align: middle; /* Align icons vertically */
+    vertical-align: left; /* Align icons vertically */
 }
 
 
