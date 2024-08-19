@@ -99,18 +99,20 @@ section ul li em {
 /* Social Links Styles */
 .social-links {
     margin-bottom: 20px;
+    text-align: center; /* Center the icons horizontally */
 }
 
 .social-links a {
-    margin-right: 10px;
-    display: inline-block;
+    display: inline-block; /* Ensure icons are in the same line */
+    margin-right: 10px; /* Space between icons */
 }
 
 .social-links img {
-    width: 14px; /* Adjust size */
-    height: 14px; /* Adjust size */
-    vertical-align: middle;
+    width: 24px; /* Adjust size */
+    height: 24px; /* Adjust size */
+    vertical-align: middle; /* Align icons vertically */
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
