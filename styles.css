@@ -34,12 +34,12 @@ header {
 
 .profile-info h1 {
     margin: 0;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .profile-info h2 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 300;
 }
 
@@ -59,7 +59,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 /* Section Styles */
