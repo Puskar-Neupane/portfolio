@@ -68,6 +68,8 @@ section {
     background: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
+    /* Add margin-bottom to create space between sections */
+    margin-bottom: 40px;
 }
 
 section h2 {
