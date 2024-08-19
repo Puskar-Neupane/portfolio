@@ -99,7 +99,7 @@ section ul li em {
 /* Social Links Styles */
 .social-links {
     margin-bottom: 20px;
-    text-align: center; /* Center the icons horizontally */
+    text-align: left; /* Align the icons to the left */
 }
 
 .social-links a {
@@ -108,10 +108,11 @@ section ul li em {
 }
 
 .social-links img {
-    width: 24px; /* Adjust size */
-    height: 24px; /* Adjust size */
-    vertical-align: left; /* Align icons vertically */
+    width: 30px; /* Adjust size */
+    height: 30px; /* Adjust size */
+    vertical-align: middle; /* Align icons vertically */
 }
+
 
 
 /* Responsive Design */
