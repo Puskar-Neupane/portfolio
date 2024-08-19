@@ -1,6 +1,6 @@
 # Puskar Neupane - Electrical Engineer, Researcher
 
-This is the personal website of Puskar Neupane, an Electrical Engineer and Researcher with expertise in renewable energy, power systems, and the integration of machine learning and AI in electrical engineering. The website showcases his publications, projects, and professional experience.
+This is the personal website of Puskar Neupane, an Electrical Engineer and Researcher with research interest in renewable energy, power systems, and the integration of machine learning and AI in electrical engineering. The website showcases his publications, projects, and professional experience.
 
 ## How to Use This Repository
 
