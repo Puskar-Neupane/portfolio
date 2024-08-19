@@ -96,6 +96,22 @@ section ul li em {
     color: #666;
 }
 
+/* Social Links Styles */
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
