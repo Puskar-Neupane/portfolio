@@ -20,8 +20,8 @@ header {
 /* Profile Photo Styles */
 .profile-photo img {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border: 10px solid white;
 }
 
