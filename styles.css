@@ -20,8 +20,8 @@ header {
 /* Profile Photo Styles */
 .profile-photo img {
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 50px;
+    height: 50px;
     border: 10px solid white;
 }
 
@@ -82,7 +82,7 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 50px; /* Add space between list items */
+    margin-bottom: 25px; /* Add space between list items */
 }
 
 section ul li strong {
