@@ -3,16 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Use a gradient to transition from the background image to a solid color */
-    background: linear-gradient(
-        rgba(255, 255, 255, 0) 50%, /* Transparent gradient for the top half */
-        rgba(255, 255, 255, 1) 50% /* Solid color for the bottom half */
-    ),
-    url('background.jpg') no-repeat center center;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
-    height: 100vh; /* Ensure the body covers the full viewport height */
-    overflow: hidden; /* Prevent scrollbars caused by the background image */
 }
 
 /* Header Styles */
@@ -27,8 +20,8 @@ header {
 /* Profile Photo Styles */
 .profile-photo img {
     border-radius: 50%;
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 50px;
+    height: 50px;
     border: 10px solid white;
 }
 
@@ -56,7 +49,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Increased gap for more spacing */
+    gap: 15px;
 }
 
 nav ul li {
@@ -75,7 +68,7 @@ section {
     background: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
-    margin-bottom: 40px; /* Space between sections */
+    margin-bottom: 40px; /* Add space between sections */
 }
 
 section h2 {
@@ -89,7 +82,7 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 25px; /* Space between list items */
+    margin-bottom: 25px; /* Add space between list items */
 }
 
 section ul li strong {
