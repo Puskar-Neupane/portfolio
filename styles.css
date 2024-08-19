@@ -68,8 +68,7 @@ section {
     background: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
-    /* Add margin-bottom to create space between sections */
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Add space between sections */
 }
 
 section h2 {
@@ -83,7 +82,7 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 15px;
+    margin-bottom: 25px; /* Add space between list items */
 }
 
 section ul li strong {
