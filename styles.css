@@ -258,8 +258,24 @@ h2 {
     margin: 20px 0;
 }
 
-.photo-gallery img {
-    margin: 10px;
+.photo-item {
+    text-align: center;
+    margin-bottom: 20px; /* Space between each photo item */
+}
+
+.photo-item img {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+.photo-item p {
+    margin-top: 10px; /* Space between the image and the description */
+    font-style: italic;
+    color: #666;
 }
 
 /* Footer (if needed) */
