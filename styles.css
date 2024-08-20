@@ -264,19 +264,21 @@ h2 {
 }
 
 .photo-item img {
-    width: 500px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    max-width: 100%; /* Ensure image scales down if needed */
+    max-height: 100%; /* Ensure image scales down if needed */
     display: block;
     margin: 0 auto;
     border-radius: 8px;
 }
-
 
 .photo-item p {
     margin-top: 10px; /* Space between the image and the description */
     font-style: italic;
     color: #666;
 }
+
 
 /* Footer (if needed) */
 footer {
