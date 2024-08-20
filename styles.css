@@ -220,7 +220,7 @@ h2 {
 .tu-logo {
     width: 100px; /* Adjust as needed */
     height: 120px;
-    left: 30px;
+    left: 40px;
 }
 
 .tedx-logo {
@@ -231,13 +231,13 @@ h2 {
 .eh-logo {
     width: 100px;
     height: 120px;
-    left: 50px;
+    left: 40px;
 }
 
 .ec-logo {
     width: 120px;
     height: 120px;
-    left: 50px;
+    left: 40px;
 }
 
 /* Vertical line before content */
