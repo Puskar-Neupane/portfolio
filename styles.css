@@ -1,128 +1,134 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
 
+/* Header Styles */
 header {
-    background: #007bff; /* Blue background color */
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-}
-
-header nav {
-    margin-top: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-header nav ul li a:hover {
-    color: #ffd700; /* Yellowish color */
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 /* Profile Photo Styles */
-header .profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .profile-photo img {
+.profile-photo img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
 }
 
-header .profile-info {
-    margin: 10px 0;
+/* Profile Info Styles */
+.profile-info {
+    flex-grow: 1;
+    margin-left: 30px;
+    color: white;
 }
 
-header .profile-info h1 {
+.profile-info h1 {
     margin: 0;
+    font-size: 3em;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
     font-size: 2em;
 }
 
-header .profile-info h2 {
-    margin: 0;
+/* Section Styles */
+section {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Add space between sections */
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 25px; /* Add space between list items */
+}
+
+section ul li strong {
+    display: block;
     font-size: 1.2em;
 }
 
-/* Section Styles */
-.container {
-    display: none;
-    padding: 20px;
-    margin-top: 140px; /* Adjust based on header height */
-}
-
-.active {
+section ul li em {
     display: block;
+    font-size: 1em;
+    color: #666;
 }
 
-/* Images */
-img.project-image, img.publication-image, img.experience-logo {
-    margin-top: 10px;
+/* Social Links Styles */
+.social-links {
+    margin-bottom: 20px;
+    text-align: left; /* Align the icons to the left */
 }
 
-.project-image, .publication-image {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 10px 0;
+.social-links a {
+    display: inline-block; /* Ensure icons are in the same line */
+    margin-right: 10px; /* Space between icons */
 }
 
-.experience-logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 10px 0;
+.social-links img {
+    width: 30px; /* Adjust size */
+    height: 30px; /* Adjust size */
+    vertical-align: middle; /* Align icons vertically */
 }
 
-/* Footer */
-footer {
-    background: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
 
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    header .profile-info h1 {
-        font-size: 1.5em;
-    }
-    
-    header .profile-info h2 {
-        font-size: 1em;
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
+    .profile-info {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
+
