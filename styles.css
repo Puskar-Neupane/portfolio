@@ -1,52 +1,9 @@
 /* General Body Styles */
-:root {
-    --text-color-light: #333;
-    --text-color-dark: #e0e0e0;
-    --background-color-light: #ffffff;
-    --background-color-dark: #1a1a1a;
-    --header-background-light: rgba(255, 255, 255, 0.7);
-    --header-background-dark: rgba(0, 0, 0, 0.7);
-    --link-color-light: #f3c832;
-    --link-color-dark: #f3c832;
-    --about-background-light: rgba(0, 0, 0, 0.6);
-    --about-background-dark: rgba(0, 0, 0, 0.8);
-    --footer-background-light: #333;
-    --footer-background-dark: #000;
-    --footer-text-color-light: #fff;
-    --footer-text-color-dark: #fff;
-    --vertical-line-color-light: white;
-    --vertical-line-color-dark: black;
-}
-
-[data-theme='light'] {
-    --text-color: var(--text-color-light);
-    --background-color: var(--background-color-light);
-    --header-background: var(--header-background-light);
-    --link-color: var(--link-color-light);
-    --about-background: var(--about-background-light);
-    --footer-background: var(--footer-background-light);
-    --footer-text-color: var(--footer-text-color-light);
-    --vertical-line-color: var(--vertical-line-color-light);
-}
-
-[data-theme='dark'] {
-    --text-color: var(--text-color-dark);
-    --background-color: var(--background-color-dark);
-    --header-background: var(--header-background-dark);
-    --link-color: var(--link-color-dark);
-    --about-background: var(--about-background-dark);
-    --footer-background: var(--footer-background-dark);
-    --footer-text-color: var(--footer-text-color-dark);
-    --vertical-line-color: var(--vertical-line-color-dark);
-}
-
-/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: #333;
 }
 
 /* Header Styles */
@@ -54,7 +11,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--header-background);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
 
@@ -80,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--link-color); /* Yellowish color for hover effect */
+    color: #f3c832; /* Yellowish color for hover effect */
 }
 
 /* About Me Section */
@@ -118,7 +75,7 @@ nav a:hover {
 
 .about-content {
     flex: 2;
-    background: var(--about-background);
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     position: relative;
@@ -130,7 +87,7 @@ nav a:hover {
     top: 0;
     height: 100%;
     width: 2px;
-    background-color: var(--vertical-line-color); /* Vertical line color */
+    background-color: white;
     margin-right: 20px;
 }
 
@@ -175,7 +132,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid var(--link-color); /* Yellowish color for section headings */
+    border-bottom: 2px solid #f3c832; /* Yellowish color for section headings */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -199,6 +156,7 @@ h2 {
 #projects li {
     margin-bottom: 15px;
 }
+
 
 /* Experience Section */
 #experience ul {
@@ -255,7 +213,7 @@ h2 {
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: var(--vertical-line-color); /* Change to black color for the vertical line */
+    background-color: black; /* Change to black color for the vertical line */
 }
 
 #experience div {
@@ -272,6 +230,9 @@ h2 {
     font-size: 1em;
     color: #666;
 }
+
+
+
 
 /* Photos Section */
 #photos .photo-gallery {
@@ -318,50 +279,11 @@ h2 {
     color: #666;
 }
 
-/* Footer */
+
+/* Footer (if needed) */
 footer {
     text-align: center;
     padding: 20px;
-    background: var(--footer-background);
-    color: var(--footer-text-color);
-}
-
-/* Media Queries for Small Devices */
-@media (max-width: 768px) {
-    /* Adjust header styles */
-    nav a {
-        font-size: 18px; /* Further reduce font size for small screens */
-    }
-    
-    /* Adjust About Me section for small screens */
-    #about {
-        height: auto; /* Allow height to adjust */
-        padding: 20px 10px; /* Reduced padding for smaller screens */
-    }
-    
-    .profile-photo img {
-        width: 150px; /* Smaller profile photo on mobile */
-        height: 150px;
-    }
-    
-    /* Adjust sections padding */
-    section {
-        padding: 30px 10px;
-    }
-    
-    /* Adjust Experience Section */
-    #experience li {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: flex-start; /* Align items to start */
-    }
-    
-    .experience-logo {
-        position: static; /* Reset logo position */
-        margin-bottom: 10px; /* Add margin below logo */
-    }
-    
-    .experience-content {
-        margin-left: 0; /* Reset margin for mobile */
-        padding-left: 0; /* Remove padding */
-    }
+    background: #333;
+    color: white;
 }
