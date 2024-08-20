@@ -170,18 +170,37 @@ h2 {
     align-items: flex-start;
     margin-bottom: 20px;
     padding-left: 70px; /* Space for the logo */
-    position: relative; /* Required for z-index */
+    position: relative;
 }
 
 .experience-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px; /* Space between the logo and text */
     position: relative;
     z-index: 1; /* Ensure the logo is above other content */
+    margin-right: 20px; /* Space between the logo and text */
 }
 
-/* Example CSS for a vertical line if needed */
+/* Specific sizes for each logo */
+#experience .tu-logo {
+    width: 50px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#experience .tedx-logo {
+    width: 80px; /* Adjust width to fit the TEDx logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#experience .eh-logo {
+    width: 40px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#experience .electrical-club-logo {
+    width: 55px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional vertical line if needed */
 /*
 #experience li::before {
     content: "";
