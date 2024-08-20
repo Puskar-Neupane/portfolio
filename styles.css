@@ -15,8 +15,38 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Yellowish color */
+}
+
+/* Profile Photo Styles */
 header .profile-photo {
     display: flex;
     justify-content: center;
@@ -30,66 +60,32 @@ header .profile-photo img {
     object-fit: cover;
 }
 
-header .profile-info h1, header .profile-info h2 {
+header .profile-info {
+    margin: 10px 0;
+}
+
+header .profile-info h1 {
     margin: 0;
+    font-size: 2em;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+header .profile-info h2 {
     margin: 0;
+    font-size: 1.2em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
+/* Section Styles */
 .container {
     display: none;
     padding: 20px;
-    margin-top: 160px; /* Adjust based on header height */
+    margin-top: 140px; /* Adjust based on header height */
 }
 
 .active {
     display: block;
 }
 
-.profile-info h1 {
-    font-size: 2em;
-}
-
-.profile-info h2 {
-    font-size: 1.2em;
-}
-
-.social-links {
-    margin: 20px 0;
-}
-
-.social-links .social-icon {
-    margin: 0 10px;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-}
-
+/* Images */
 img.project-image, img.publication-image, img.experience-logo {
     margin-top: 10px;
 }
@@ -108,6 +104,7 @@ img.project-image, img.publication-image, img.experience-logo {
     margin: 10px 0;
 }
 
+/* Footer */
 footer {
     background: #f8f9fa;
     padding: 10px;
@@ -124,7 +121,7 @@ footer {
         font-size: 1em;
     }
 
-    nav ul li {
+    header nav ul li {
         display: block;
         margin: 10px 0;
     }
