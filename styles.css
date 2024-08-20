@@ -3,18 +3,53 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
     color: #333;
 }
 
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 /* Profile Photo Styles */
@@ -22,14 +57,12 @@ header {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: 10px solid white;
+    border: 5px solid white;
 }
 
 /* Profile Info Styles */
 .profile-info {
-    flex-grow: 1;
-    margin-left: 30px;
-    color: white;
+    max-width: 600px;
 }
 
 .profile-info h1 {
@@ -43,32 +76,30 @@ header {
     font-weight: 300;
 }
 
-/* Navigation Styles */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 50px;
+.profile-info p {
+    font-size: 1.2em;
+    margin-top: 20px;
 }
 
-nav ul li {
-    margin: 0;
+/* Social Links Styles */
+.social-links {
+    margin: 20px 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Section Styles */
 section {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px; /* Add space between sections */
+    padding: 80px 40px;
+    margin-top: 100px;
 }
 
 section h2 {
@@ -82,7 +113,17 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 25px; /* Add space between list items */
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section ul li img {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
 }
 
 section ul li strong {
@@ -90,44 +131,50 @@ section ul li strong {
     font-size: 1.2em;
 }
 
-section ul li em {
-    display: block;
-    font-size: 1em;
-    color: #666;
+section ul li p {
+    margin: 0;
+    clear: both;
 }
 
-/* Social Links Styles */
-.social-links {
-    margin-bottom: 20px;
-    text-align: left; /* Align the icons to the left */
+/* Photo Gallery Styles */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.social-links a {
-    display: inline-block; /* Ensure icons are in the same line */
-    margin-right: 10px; /* Space between icons */
+.photo-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
-
-.social-links img {
-    width: 30px; /* Adjust size */
-    height: 30px; /* Adjust size */
-    vertical-align: middle; /* Align icons vertically */
-}
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
+    .about-container {
         flex-direction: column;
         text-align: center;
-    }
-
-    .profile-info {
-        margin-left: 0;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info h1 {
+        font-size: 2em;
+    }
+
+    .profile-info h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 60px 20px;
     }
 }
