@@ -178,6 +178,13 @@ h2 {
     margin: 0;
     padding: 0 0 0 20px; /* Indent nested lists */
 }
+
+ #projects li ul li {
+            margin: 0; /* Remove space between nested list items */
+            padding: 0; /* Remove padding for nested list items */
+        }
+
+
 /* Experience Section */
 #experience ul {
     list-style: none;
