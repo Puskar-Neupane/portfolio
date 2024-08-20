@@ -173,32 +173,32 @@ h2 {
 
 .experience-logo {
     position: absolute;
-    left: 100px; /* Position the logo 100px from the left */
+    left: 10px; /* Position the logo 100px from the left */
 }
 
 /* Specific logo sizes */
 .tu-logo {
-    width: 60px; /* Adjust as needed */
-    height: 60px;
+    width: 85px; /* Adjust as needed */
+    height: 100px;
 }
 
 .tedx-logo {
-    width: 100px; /* TEDx logo with specific size */
+    width: 120px; /* TEDx logo with specific size */
     height: 50px;
 }
 
 .eh-logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 
 .ec-logo {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .experience-content {
-    margin-left: 120px; /* Ensure content starts 150px from the left of the page */
+    margin-left: 150px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
 }
 
