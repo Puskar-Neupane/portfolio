@@ -161,7 +161,7 @@ h2 {
 #experience ul {
     list-style: none;
     padding: 0;
-    margin-left: 20px; /* Ensures content starts 120px from the left */
+    margin-left: 10px; /* Ensures content starts 120px from the left */
 }
 
 #experience li {
@@ -171,13 +171,13 @@ h2 {
 }
 
 .experience-logo {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     margin-right: 25px;
 }
 
 .experience-logo.tedx-logo {
-    width: 100px;
+    width: 125px;
     height: 50px;
 }
 
