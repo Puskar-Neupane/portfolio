@@ -5,114 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puskar Neupane - Electrical Engineer, Researcher</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some additional inline styles for better spacing and layout */
+        .container {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .project-image, .publication-image {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }
+        .experience-logo {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="profile-photo">
+            <img src="photo.png" alt="Puskar Neupane">
+        </div>
+        <div class="profile-info">
+            <h1>Puskar Neupane</h1>
+            <h2>Electrical Engineer, Researcher</h2>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#photos">Photos</a></li>
+                <li><a href="#" id="about-link">About Me</a></li>
+                <li><a href="#" id="publications-link">Publications</a></li>
+                <li><a href="#" id="projects-link">Projects</a></li>
+                <li><a href="#" id="experience-link">Experience</a></li>
+                <li><a href="#" id="photos-link">Photos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about" class="landing-page">
-        <div class="profile-container">
-            <div class="profile-photo">
-                <img src="photo.png" alt="Puskar Neupane">
-            </div>
-            <div class="profile-info">
-                <h1>Puskar Neupane</h1>
-                <h2>Electrical Engineer, Researcher</h2>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/puskar-neupane/" target="_blank" class="social-icon">
-                        <img src="linkedin-icon.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=5ARA3KYAAAAJ&hl=en" target="_blank" class="social-icon">
-                        <img src="google-scholar-icon.png" alt="Google Scholar">
-                    </a>
-                    <a href="https://www.facebook.com/puskar.neupane.35/" target="_blank" class="social-icon">
-                        <img src="facebook-icon.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/puskar_neupane.14/" target="_blank" class="social-icon">
-                        <img src="instagram-icon.png" alt="Instagram">
-                    </a>
-                </div>
-                <p><strong>I am an Electrical Engineer with a deep passion for solving challenges in grid integration, power electronics, and the application of Machine Learning and AI in electrical engineering. I have a strong academic and professional background in power systems and have worked on innovative projects that address real-world problems in this field.</strong></p>
-            </div>
+    <section id="about" class="container active">
+        <h2>About Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/puskar-neupane/" target="_blank" class="social-icon">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://scholar.google.com/citations?user=5ARA3KYAAAAJ&hl=en" target="_blank" class="social-icon">
+                <img src="google-scholar-icon.png" alt="Google Scholar">
+            </a>
+            <a href="https://www.facebook.com/puskar.neupane.35/" target="_blank" class="social-icon">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/puskar_neupane.14/" target="_blank" class="social-icon">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
         </div>
+        <p><strong>I am an Electrical Engineer with a deep passion for solving challenges in grid integration, power electronics, and the application of Machine Learning and AI in electrical engineering. I have a strong academic and professional background in power systems and have worked on innovative projects that address real-world problems in this field.</strong></p>
+
+        <strong>Education</strong><br>
+        Bachelor of Electrical Engineering (2019-2024)<br>
+        <em>Pulchowk Campus, Institute of Engineering, Tribhuvan University</em>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="container">
         <h2>Publications</h2>
         <ul>
-            <li><strong>Stability in Isolated Grids: Implementation and Analysis of the Dead-Zone Virtual Oscillator Control in Simulink and Typhoon HIL.</strong> <em>IEEE Powercon 2024.</em> 
-            D.B. Sapkota, P. Neupane, B. Shiwakoti, S. Baral, P. Bhattarai, B.K. Gautam<br>
-            <a href="https://doi.org/10.48550/arXiv.2408.02468" target="_blank">Link to Publication</a></li>
+            <li>
+                <strong>Stability in Isolated Grids: Implementation and Analysis of the Dead-Zone Virtual Oscillator Control in Simulink and Typhoon HIL.</strong> 
+                <em>IEEE Powercon 2024.</em> 
+                D.B. Sapkota, P. Neupane, B. Shiwakoti, S. Baral, P. Bhattarai, B.K. Gautam<br>
+                <a href="https://doi.org/10.48550/arXiv.2408.02468" target="_blank">Link to Publication</a>
+            </li>
 
-            <li><strong>Deep learning model for enhanced power loss prediction in the frequency domain for magnetic materials.</strong> <em>IET Power Electron. 2024.</em> 
-            D.B. Sapkota, P. Neupane, M. Joshi, S. Khan<br>
-            <a href="https://doi.org/10.1049/pel2.12704" target="_blank">Link to Publication</a></li>
+            <li>
+                <strong>Deep learning model for enhanced power loss prediction in the frequency domain for magnetic materials.</strong> 
+                <em>IET Power Electron. 2024.</em> 
+                D.B. Sapkota, P. Neupane, M. Joshi, S. Khan<br>
+                <a href="https://doi.org/10.1049/pel2.12704" target="_blank">Link to Publication</a>
+            </li>
 
-            <li><strong>Application of Low-Cost Automated Progress Tracking System (APS) on Laparoscopic Appendicectomy Simulation Models (LaApSi).</strong> <em>British Journal of Surgery, 2024.</em> 
-            B. B. Karki, S. Sharma, P. Neupane, S. Phuyal, S. Shrestha, S. Katuwal, S. Satyal, M. Loubani<br>
-            <a href="https://doi.org/10.1093/bjs/znae163.129" target="_blank">Link to Publication</a></li>
+            <li>
+                <strong>Application of Low-Cost Automated Progress Tracking System (APS) on Laparoscopic Appendicectomy Simulation Models (LaApSi).</strong> 
+                <em>British Journal of Surgery, 2024.</em> 
+                B. B. Karki, S. Sharma, P. Neupane, S. Phuyal, S. Shrestha, S. Katuwal, S. Satyal, M. Loubani<br>
+                <a href="https://doi.org/10.1093/bjs/znae163.129" target="_blank">Link to Publication</a>
+            </li>
 
-            <li><strong>Innovating Automated Progress Tracking System (APS) for Laparoscopic Simulation Training in Low-Middle-Income-Countries Using LaApSi Models.</strong> <em>British Journal of Surgery, 2024.</em> 
-            B. B. Karki, S. Sharma, P. Neupane, S. Phuyal, S. Shrestha, S. Katuwal, S. Satyal, M. Loubani<br>
-            <a href="https://doi.org/10.1093/bjs/znae163.014" target="_blank">Link to Publication</a></li>
+            <li>
+                <strong>Innovating Automated Progress Tracking System (APS) for Laparoscopic Simulation Training in Low-Middle-Income-Countries Using LaApSi Models.</strong> 
+                <em>British Journal of Surgery, 2024.</em> 
+                B. B. Karki, S. Sharma, P. Neupane, S. Phuyal, S. Shrestha, S. Katuwal, S. Satyal, M. Loubani<br>
+                <a href="https://doi.org/10.1093/bjs/znae163.014" target="_blank">Link to Publication</a>
+            </li>
 
-            <li><strong>A Comprehensive Study on Implementation of Deep Learning on Autonomous Vehicle for Steering Angle Prediction and Stability.</strong> <em>KEC Journal of Science and Engineering.</em> 
-            S. Sharma, P. Neupane, S. Shrestha, S. Phuyal, S. Satyal</li>
+            <li>
+                <strong>A Comprehensive Study on Implementation of Deep Learning on Autonomous Vehicle for Steering Angle Prediction and Stability.</strong> 
+                <em>KEC Journal of Science and Engineering.</em> 
+                S. Sharma, P. Neupane, S. Shrestha, S. Phuyal, S. Satyal
+            </li>
         </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Virtual Oscillator Control for Inverters</strong> (Apr. 2023 – Mar. 2024)<br>
-                Designed a VOC control system for a three-phase inverter and operated multiple of them in parallel. Analyzed the behaviors of a VOC (GFM) and PV (GFL) connected microgrid. Compared the performance of the VOC-integrated microgrid against conventional droop control.
+            <li>
+                <strong>Virtual Oscillator Control for Inverters</strong> (Apr. 2023 – Mar. 2024)<br>
+                Designed a VOC control system for a three-phase inverter and operated multiple of them in parallel. Analyzed the behaviors of a VOC (Grid-Forming) and PV (Grid-Following) connected microgrid. Compared the performance of the VOC-integrated microgrid against conventional droop control.<br>
+                <img src="project-image1.png" alt="Virtual Oscillator Control for Inverters" class="project-image">
             </li>
-            <li><strong>Forecasting Losses in Magnetic Materials</strong> (Apr. 2023 – Dec. 2024)<br>
-                Completed as part of IEEE PELS-Google-Enphase-Princeton MagNet Challenge 2023. Prediction of loss based on magnetic field, temperature, and frequency of operation. Used LSTM to train the model in the frequency domain.
+            <li>
+                <strong>Forecasting Losses in Magnetic Materials</strong> (Apr. 2023 – Dec. 2024)<br>
+                Completed as part of IEEE PELS-Google-Enphase-Princeton MagNet Challenge 2023. Prediction of loss based on magnetic field, temperature, and frequency of operation. Used LSTM to train the model in the frequency domain.<br>
+                <img src="project-image2.png" alt="Forecasting Losses in Magnetic Materials" class="project-image">
             </li>
-            <li><strong>Fabrication of Low-Cost LaApSi Model</strong> (Sep. 2023 – Dec. 2023)<br>
-                Successfully created and produced a cost-effective laparoscopic appendicectomy simulation model designed specifically for surgical trainees in low and middle-income countries (LMICs).
+            <li>
+                <strong>Fabrication of Low-Cost LaApSi Model</strong> (Sep. 2023 – Dec. 2023)<br>
+                Successfully created and produced a cost-effective laparoscopic appendicectomy simulation model designed specifically for surgical trainees in low and middle-income countries (LMICs).<br>
+                <img src="project-image3.png" alt="Fabrication of Low-Cost LaApSi Model" class="project-image">
             </li>
-            <li><strong>Autonomous Driving Vehicle</strong> (Aug. 2022 – Mar. 2023)<br>
-                Demonstrated an operational prototype of a self-driving RC car using ANN, CNN, and LSTM architectures for model training, with an article published in a national journal.
+            <li>
+                <strong>Autonomous Driving Vehicle</strong> (Aug. 2022 – Mar. 2023)<br>
+                Demonstrated an operational prototype of a self-driving RC car using ANN, CNN, and LSTM architectures for model training, with an article published in a national journal.<br>
+                <img src="project-image4.png" alt="Autonomous Driving Vehicle" class="project-image">
             </li>
         </ul>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="container">
         <h2>Experience</h2>
         <ul>
-            <li><strong>Research Assistant</strong> (Apr. 2024 – Present)<br>
-                Department of Electrical Engineering, Pulchowk Campus, Lalitpur, Nepal <br>
-                Exploring diverse topics, such as analyzing the power quality of distribution networks in response to the increased usage of induction cookers. Organized the “Renewable Energy Symposium: Today and Tomorrow” featuring speakers from Nepal Electricity Authority, Alternative Energy Promotion Centre, USAID, and Professors from the Institute of Engineering.
+            <li>
+                <strong>Research Assistant</strong> (Apr. 2024 – Present)<br>
+                Department of Electrical Engineering, Pulchowk Campus, Lalitpur, Nepal<br>
+                Exploring diverse topics, such as analyzing the power quality of distribution networks in response to the increased usage of induction cookers. Organized the “Renewable Energy Symposium: Today and Tomorrow” featuring speakers from Nepal Electricity Authority, Alternative Energy Promotion Centre, USAID, and Professors from the Institute of Engineering.<br>
+                <img src="research-assistant-logo.png" alt="Research Assistant" class="experience-logo">
             </li>
-            <li><strong>Event Manager</strong> (Dec. 2023 – Apr. 2024)<br>
-                TEDx IOE Pulchowk, Lalitpur, Nepal <br>
-                Managed and directed a highly successful TEDx IOE Pulchowk event featuring 11 live talks, 3 performances, 100 attendees, and over 50 partners, gaining extensive experience in micromanagement, teamwork, and leadership.
+            <li>
+                <strong>Event Manager</strong> (Dec. 2023 – Apr. 2024)<br>
+                TEDx IOE Pulchowk, Lalitpur, Nepal<br>
+                Managed and directed a highly successful TEDx IOE Pulchowk event featuring 11 live talks, 3 performances, 100 attendees, and over 50 partners, gaining extensive experience in micromanagement, volunteer coordination, and budget management.<br>
+                <img src="event-manager-logo.png" alt="Event Manager" class="experience-logo">
             </li>
-            <li><strong>Organizer</strong> (Nov. 2023 – Jan. 2024)<br>
-                Energy Hackathon, Lalitpur, Nepal <br>
-                Organized and managed the largest week-long Energy Hackathon in Nepal sponsored by GIZ Nepal, mentoring over 20 undergraduate teams to foster creativity and problem-solving in the energy and power sector.
-            </li>
-            <li><strong>Vice President</strong> (May 2022 – May 2023)<br>
-                Electrical Club Pulchowk Campus, Lalitpur, Nepal <br>
-                Introduced and successfully conducted the first PCB Design workshop on campus with over 145 participants, contributed to 2 projects, mentored 5+ hardware projects at LOCUS 2023 Exhibition, and hosted a podcast series with Pulchowk Campus alumni.
+            <li>
+                <strong>Electrical Engineering Intern</strong> (Jun. 2022 – Aug. 2022)<br>
+                Nepal Electricity Authority, Kathmandu, Nepal<br>
+                Worked in the Distribution Planning Department, contributing to the assessment of distribution network stability, load forecasting, and planning of infrastructure upgrades.<br>
+                <img src="intern-logo.png" alt="Intern" class="experience-logo">
             </li>
         </ul>
     </section>
 
-    <section id="photos">
-        <h2>Photos</h2>
-        <p>Upload and display your best photos here.</p>
-    </section>
+    <footer>
+        <p>&copy; 2024 Puskar Neupane</p>
+    </footer>
+
+    <script>
+        document.getElementById('about-link').addEventListener('click', function() {
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('about').classList.add('active');
+        });
+
+        document.getElementById('publications-link').addEventListener('click', function() {
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('publications').classList.add('active');
+        });
+
+        document.getElementById('projects-link').addEventListener('click', function() {
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('projects').classList.add('active');
+        });
+
+        document.getElementById('experience-link').addEventListener('click', function() {
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('experience').classList.add('active');
+        });
+
+        document.getElementById('photos-link').addEventListener('click', function() {
+            document.querySelectorAll('.container').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('photos').classList.add('active');
+        });
+    </script>
 </body>
 </html>
