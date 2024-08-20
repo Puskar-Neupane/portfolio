@@ -218,9 +218,9 @@ h2 {
 
 /* Specific logo sizes */
 .tu-logo {
-    width: 85px; /* Adjust as needed */
-    height: 100px;
-    left: 40px;
+    width: 100px; /* Adjust as needed */
+    height: 120px;
+    left: 30px;
 }
 
 .tedx-logo {
@@ -229,15 +229,15 @@ h2 {
 }
 
 .eh-logo {
-    width: 90px;
-    height: 100px;
-    left: 40px;
+    width: 100px;
+    height: 120px;
+    left: 30px;
 }
 
 .ec-logo {
-    width: 100px;
-    height: 100px;
-    left: 40px;
+    width: 120px;
+    height: 120px;
+    left: 30px;
 }
 
 /* Vertical line before content */
