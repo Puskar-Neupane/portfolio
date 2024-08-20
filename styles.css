@@ -157,6 +157,7 @@ h2 {
     margin-bottom: 15px;
 }
 
+
 /* Experience Section */
 #experience ul {
     list-style: none;
@@ -164,26 +165,43 @@ h2 {
 }
 
 #experience li {
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    position: relative; /* To position the vertical line */
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 70px; /* Space for the logo and vertical line */
 }
 
 .experience-logo {
     width: 50px;
     height: 50px;
-    margin-right: 30px; /* Increased space between logo and text */
+    margin-right: 20px; /* Space between the logo and vertical line */
 }
 
-#experience li::after {
+#experience li::before {
     content: "";
     position: absolute;
+    left: 60px; /* Position the vertical line to the right of the logo */
     top: 0;
-    right: calc(100% + 10px); /* Position the vertical line to the right of the logo */
-    height: 50px; /* Height of the vertical line */
+    height: 100%;
     width: 2px; /* Width of the vertical line */
     background-color: #333; /* Color of the vertical line */
+}
+
+#experience li div {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience li div strong {
+    display: block;
+    font-size: 1.2em;
+}
+
+#experience li div p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
 }
 
 
