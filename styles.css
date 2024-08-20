@@ -157,6 +157,7 @@ h2 {
     margin-bottom: 15px;
 }
 
+
 /* Experience Section */
 #experience ul {
     list-style: none;
@@ -173,7 +174,7 @@ h2 {
 
 .experience-logo {
     position: absolute;
-    left: 10px; /* Position the logo 100px from the left */
+    left: 10px; /* Adjust position of logo */
 }
 
 /* Specific logo sizes */
@@ -197,9 +198,22 @@ h2 {
     height: 100px;
 }
 
+/* Vertical line before content */
 .experience-content {
     margin-left: 180px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
+    position: relative;
+    padding-left: 30px; /* Add padding to separate content from the vertical line */
+}
+
+.experience-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #f3c832; /* Yellowish color for the vertical line */
 }
 
 #experience div {
@@ -216,6 +230,7 @@ h2 {
     font-size: 1em;
     color: #666;
 }
+
 
 
 
