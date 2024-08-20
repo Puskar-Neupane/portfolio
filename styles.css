@@ -166,16 +166,18 @@ h2 {
 
 #experience li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
     position: relative;
     padding-left: 70px; /* Space for the logo and vertical line */
+    line-height: 1.5; /* Improve readability */
 }
 
 .experience-logo {
     width: 50px;
     height: 50px;
     margin-right: 20px; /* Space between the logo and vertical line */
+    position: relative;
 }
 
 #experience li::before {
@@ -191,6 +193,7 @@ h2 {
 #experience li div {
     display: flex;
     flex-direction: column;
+    margin-left: 20px; /* Space between vertical line and text */
 }
 
 #experience li div strong {
