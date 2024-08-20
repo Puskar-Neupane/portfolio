@@ -183,12 +183,12 @@ h2 {
 }
 
 .tedx-logo {
-    width: 130px; /* TEDx logo with specific size */
+    width: 140px; /* TEDx logo with specific size */
     height: 50px;
 }
 
 .eh-logo {
-    width: 60px;
+    width: 100px;
     height: 100px;
 }
 
@@ -198,7 +198,7 @@ h2 {
 }
 
 .experience-content {
-    margin-left: 150px; /* Ensure content starts 150px from the left of the page */
+    margin-left: 160px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
 }
 
