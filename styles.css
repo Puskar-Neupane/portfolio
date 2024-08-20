@@ -13,7 +13,6 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-    padding: 10px 0; /* Adjust padding for better visibility */
 }
 
 nav ul {
@@ -23,18 +22,17 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* Allow for flexible height */
-    flex-wrap: wrap; /* Wrap navigation items on smaller screens */
+    height: 60px;
 }
 
 nav ul li {
-    margin: 0 15px; /* Adjust margin for better spacing */
+    margin: 0 30px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 20px; /* Adjust font size for better mobile readability */
+    font-size: 25px;
     transition: color 0.3s ease;
 }
 
@@ -45,7 +43,6 @@ nav a:hover {
 /* About Me Section */
 #about {
     display: flex;
-    flex-direction: column; /* Stack elements vertically on smaller screens */
     align-items: center;
     justify-content: center;
     background-image: url('background.jpg'); /* Replace with your background image path */
@@ -58,34 +55,59 @@ nav a:hover {
 
 .about-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically on smaller screens */
     align-items: center;
-    width: 100%; /* Full width on mobile */
+    width: 80%;
     max-width: 1200px;
     margin: auto;
 }
 
 .profile-photo {
-    margin-bottom: 20px; /* Space between photo and content on mobile */
+    flex: 1;
+    margin-right: 20px;
 }
 
 .profile-photo img {
-    width: 200px; /* Adjusted for mobile */
-    height: 200px; /* Adjusted for mobile */
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 5px solid white;
 }
 
 .about-content {
+    flex: 2;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    width: 100%; /* Full width on mobile */
 }
 
 .vertical-line {
-    display: none; /* Hide vertical line on mobile */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.profile-info {
+    margin-left: 70px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 15px 0;
+    font-size: 18px;
 }
 
 /* Social Links Styles */
@@ -177,10 +199,10 @@ h2 {
 
 /* Vertical line before content */
 .experience-content {
-    margin-left: 160px; /* Ensure content starts 150px from the left of the page */
+    margin-left: 180px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
     position: relative;
-    padding-left: 20px; /* Add padding to separate content from the vertical line */
+    padding-left: 30px; /* Add padding to separate content from the vertical line */
 }
 
 .experience-content::before {
@@ -208,12 +230,13 @@ h2 {
     color: #666;
 }
 
+
+
 /* Photos Section */
 #photos .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center; /* Center align gallery items */
 }
 
 #photos img {
@@ -233,25 +256,8 @@ h2 {
     margin: 20px 0;
 }
 
-.photo-item {
-    text-align: center;
-    margin-bottom: 20px; /* Space between each photo item */
-}
-
-.photo-item img {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    max-width: 100%; /* Ensure image scales down if needed */
-    max-height: 100%; /* Ensure image scales down if needed */
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-.photo-item p {
-    margin-top: 10px; /* Space between the image and the description */
-    font-style: italic;
-    color: #666;
+.photo-gallery img {
+    margin: 10px;
 }
 
 /* Footer (if needed) */
@@ -260,43 +266,4 @@ footer {
     padding: 20px;
     background: #333;
     color: white;
-}
-
-/* Mobile Compatibility */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Adjust margin for better spacing */
-    }
-
-    .about-container {
-        flex-direction: column; /* Stack items vertically in the About Me section */
-    }
-
-    .profile-photo img {
-        width: 150px; /* Adjust for smaller screens */
-        height: 150px; /* Adjust for smaller screens */
-    }
-
-    .about-content {
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-
-    #photos img {
-        width: 150px; /* Adjust photo size for smaller screens */
-        height: 100px; /* Adjust photo size for smaller screens */
-    }
-
-    .photo-item img {
-        width: 250px; /* Adjust photo size for smaller screens */
-        height: 150px; /* Adjust photo size for smaller screens */
-    }
-
-    footer {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
 }
