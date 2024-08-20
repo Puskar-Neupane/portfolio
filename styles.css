@@ -81,16 +81,6 @@ nav a:hover {
     position: relative;
 }
 
-.vertical-line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    margin-right: 20px;
-}
-
 .profile-info {
     margin-left: 70px;
 }
@@ -117,7 +107,7 @@ nav a:hover {
 
 .social-links a {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px; /* Increased spacing for better visual separation */
 }
 
 .social-links img {
@@ -137,26 +127,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Publications Section */
-#publications ul {
-    list-style: none;
-    padding: 0;
-}
-
-#publications li {
-    margin-bottom: 15px;
-}
-
-/* Projects Section */
-#projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-#projects li {
-    margin-bottom: 15px;
-}
-
+/* Experience Section */
 #experience ul {
     list-style: none;
     padding: 0;
@@ -182,11 +153,9 @@ h2 {
 
 /* Ensure the content aligns after the logo consistently */
 .experience-content {
-    padding-left: 15px;
     flex: 1;
 }
 
-/* Adjust the content positioning */
 #experience div {
     line-height: 1.5; /* Improve readability */
 }
@@ -201,7 +170,6 @@ h2 {
     font-size: 1em;
     color: #666;
 }
-
 
 /* Photos Section */
 #photos .photo-gallery {
