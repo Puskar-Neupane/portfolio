@@ -26,13 +26,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 30px;
+    margin: 0 15px; /* Adjusted margin for mobile */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px; /* Adjusted font size for better readability */
     transition: color 0.3s ease;
 }
 
@@ -43,6 +43,7 @@ nav a:hover {
 /* About Me Section */
 #about {
     display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
     align-items: center;
     justify-content: center;
     background-image: url('background.jpg'); /* Replace with your background image path */
@@ -51,63 +52,59 @@ nav a:hover {
     height: 100vh;
     color: white;
     padding: 20px;
+    text-align: center; /* Center text for mobile view */
 }
 
 .about-container {
     display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
 
 .profile-photo {
-    flex: 1;
-    margin-right: 20px;
+    margin-bottom: 20px; /* Add margin below photo for mobile */
 }
 
 .profile-photo img {
-    width: 300px;
-    height: 300px;
+    width: 150px; /* Adjusted width for mobile */
+    height: 150px; /* Adjusted height for mobile */
     border-radius: 50%;
     border: 5px solid white;
 }
 
 .about-content {
-    flex: 2;
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     position: relative;
+    width: 100%;
 }
 
+/* Vertical line adjustments for mobile */
 .vertical-line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    margin-right: 20px;
+    display: none; /* Hide vertical line on mobile */
 }
 
 .profile-info {
-    margin-left: 70px;
+    margin-top: 20px; /* Adjust margin for mobile view */
 }
 
 .profile-info h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 28px; /* Adjusted font size for mobile */
 }
 
 .profile-info h2 {
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 20px; /* Adjusted font size for mobile */
 }
 
 .profile-info p {
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 16px; /* Adjusted font size for mobile */
 }
 
 /* Social Links Styles */
@@ -157,7 +154,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-
 /* Experience Section */
 #experience ul {
     list-style: none;
@@ -170,50 +166,43 @@ h2 {
     display: flex;
     align-items: center;
     position: relative;
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center text for mobile view */
 }
 
 .experience-logo {
-    position: absolute;
-    left: 10px; /* Adjust position of logo */
+    margin-bottom: 10px; /* Add margin below logo for mobile */
 }
 
 /* Specific logo sizes */
 .tu-logo {
-    width: 85px; /* Adjust as needed */
-    height: 100px;
+    width: 70px; /* Adjusted size for mobile */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .tedx-logo {
-    width: 140px; /* TEDx logo with specific size */
-    height: 50px;
+    width: 100px; /* Adjusted size for mobile */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .eh-logo {
-    width: 90px;
-    height: 100px;
+    width: 70px; /* Adjusted size for mobile */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .ec-logo {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Adjusted size for mobile */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Vertical line before content */
 .experience-content {
-    margin-left: 160px; /* Ensure content starts 150px from the left of the page */
-    flex: 1;
-    position: relative;
-    padding-left: 20px; /* Add padding to separate content from the vertical line */
+    margin-left: 0; /* Remove left margin on mobile */
+    padding-left: 0; /* Remove left padding on mobile */
 }
 
 .experience-content::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: black; /* Change to black color for the vertical line */
+    display: none; /* Hide vertical line on mobile */
 }
 
 #experience div {
@@ -231,9 +220,6 @@ h2 {
     color: #666;
 }
 
-
-
-
 /* Photos Section */
 #photos .photo-gallery {
     display: flex;
@@ -242,15 +228,16 @@ h2 {
 }
 
 #photos img {
-    width: 200px;
-    height: 150px;
+    width: 150px; /* Adjusted width for mobile */
+    height: 100px; /* Adjusted height for mobile */
     object-fit: cover;
     border-radius: 8px;
 }
 
 /* Navigation Text Spacing */
 .nav-link {
-    padding: 10px 20px;
+    padding: 10px;
+    font-size: 18px; /* Adjusted font size for mobile */
 }
 
 /* Spacing Adjustment */
@@ -264,8 +251,8 @@ h2 {
 }
 
 .photo-item img {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    width: 200px; /* Adjust the width for mobile */
+    height: 150px; /* Adjust the height for mobile */
     max-width: 100%; /* Ensure image scales down if needed */
     max-height: 100%; /* Ensure image scales down if needed */
     display: block;
@@ -279,11 +266,63 @@ h2 {
     color: #666;
 }
 
-
-/* Footer (if needed) */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
     color: white;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    /* Header Styles */
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjusted margin for vertical layout */
+    }
+
+    /* About Me Section */
+    #about {
+        height: auto; /* Allow height to adjust */
+        padding: 20px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .profile-photo img {
+        width: 150px; /* Adjusted width for mobile */
+        height: 150px; /* Adjusted height for mobile */
+    }
+
+    .about-content {
+        width: 100%; /* Full width on mobile */
+    }
+
+    /* Adjust Sections Padding */
+    section {
+        padding: 30px 10px; /* Reduced padding for smaller screens */
+    }
+
+    /* Experience Section */
+    #experience li {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items on mobile */
+    }
+
+    .experience-logo {
+        margin-bottom: 10px; /* Add margin below logo for mobile */
+    }
+
+    .experience-content {
+        margin-left: 0; /* Remove left margin on mobile */
+        padding-left: 0; /* Remove left padding on mobile */
+    }
+
+    .photo-item img {
+        width: 150px; /* Adjusted width for mobile */
+        height: 100px; /* Adjusted height for mobile */
+    }
 }
