@@ -213,7 +213,7 @@ h2 {
 
 .experience-logo {
     position: absolute;
-    left: 10px; /* Adjust position of logo */
+    left: 20px; /* Adjust position of logo */
 }
 
 /* Specific logo sizes */
@@ -239,7 +239,7 @@ h2 {
 
 /* Vertical line before content */
 .experience-content {
-    margin-left: 180px; /* Ensure content starts 150px from the left of the page */
+    margin-left: 190px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
     position: relative;
     padding-left: 30px; /* Add padding to separate content from the vertical line */
