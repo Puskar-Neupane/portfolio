@@ -161,32 +161,44 @@ h2 {
 #experience ul {
     list-style: none;
     padding: 0;
-    margin-left: 0; /* No need for additional margin here */
+    margin-left: 0; /* Reset margin to avoid any additional spacing */
 }
 
 #experience li {
-    position: relative;
     margin-bottom: 20px;
     display: flex;
-    align-items: flex-start; /* Aligns the logo and text at the top */
+    align-items: center;
+    position: relative;
 }
 
 .experience-logo {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px; /* Default logo size */
+    left: 100px; /* Position the logo 100px from the left */
+}
+
+/* Specific logo sizes */
+.tu-logo {
+    width: 60px; /* Adjust as needed */
+    height: 60px;
+}
+
+.tedx-logo {
+    width: 100px; /* TEDx logo with specific size */
     height: 50px;
 }
 
-.experience-logo.tedx-logo {
-    width: 100px; /* TEDx-specific logo size */
+.eh-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.ec-logo {
+    width: 50px;
     height: 50px;
 }
 
-/* Ensure the content aligns consistently, starting 150px from the left of the page */
 .experience-content {
-    margin-left: 150px; /* Text content starts at 150px */
+    margin-left: 180px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
 }
 
@@ -204,6 +216,7 @@ h2 {
     font-size: 1em;
     color: #666;
 }
+
 
 
 /* Photos Section */
