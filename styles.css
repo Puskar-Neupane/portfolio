@@ -184,7 +184,7 @@ h2 {
 #experience li::before {
     content: "";
     position: absolute;
-    left: 90px; /* Position the vertical line to the right of the logo */
+    left: 10px; /* Position the vertical line to the right of the logo */
     top: 0;
     height: 100%;
     width: 2px; /* Width of the vertical line */
@@ -193,7 +193,7 @@ h2 {
 }
 
 #experience li div {
-    margin-left: 50px; /* Space between vertical line and text */
+    margin-left: 20px; /* Space between vertical line and text */
     line-height: 1.5; /* Improve readability */
 }
 
