@@ -13,8 +13,7 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-    /* Ensure header has sufficient height to avoid overlapping */
-    height: 60px; 
+    padding: 10px 0; /* Adjust padding for better visibility */
 }
 
 nav ul {
@@ -24,17 +23,18 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto; /* Allow for flexible height */
+    flex-wrap: wrap; /* Wrap navigation items on smaller screens */
 }
 
 nav ul li {
-    margin: 0 15px; /* Adjusted for smaller screens */
+    margin: 0 15px; /* Adjust margin for better spacing */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 20px; /* Reduced size for mobile */
+    font-size: 20px; /* Adjust font size for better mobile readability */
     transition: color 0.3s ease;
 }
 
@@ -45,6 +45,7 @@ nav a:hover {
 /* About Me Section */
 #about {
     display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
     align-items: center;
     justify-content: center;
     background-image: url('background.jpg'); /* Replace with your background image path */
@@ -53,26 +54,26 @@ nav a:hover {
     height: 100vh;
     color: white;
     padding: 20px;
-    margin-top: 60px; /* Offset for fixed header */
 }
 
 .about-container {
     display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
     align-items: center;
-    width: 100%;
+    width: 100%; /* Full width on mobile */
     max-width: 1200px;
     margin: auto;
-    flex-direction: column; /* Stack vertically on small screens */
 }
 
 .profile-photo {
-    margin-right: 0;
-    margin-bottom: 20px; /* Space below photo */
+    margin-bottom: 20px; /* Space between photo and content on mobile */
 }
 
 .profile-photo img {
-    width: 200px; /* Adjusted size for smaller screens */
-    height: 200px; /* Adjusted size for smaller screens */
+    width: 200px; /* Adjusted for mobile */
+    height: 200px; /* Adjusted for mobile */
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
 .about-content {
@@ -80,53 +81,32 @@ nav a:hover {
     padding: 20px;
     border-radius: 8px;
     position: relative;
+    width: 100%; /* Full width on mobile */
 }
 
 .vertical-line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    margin-right: 20px;
-}
-
-/* Ensure vertical line is visible on smaller screens */
-@media (max-width: 768px) {
-    .vertical-line {
-        display: none; /* Hide vertical line on smaller screens */
-    }
-}
-
-.profile-info {
-    margin-left: 0;
-    text-align: center; /* Center align text on small screens */
-}
-
-.profile-info h1, .profile-info h2, .profile-info p {
-    margin: 10px 0;
-    font-size: 18px; /* Adjust font size for mobile */
+    display: none; /* Hide vertical line on mobile */
 }
 
 /* Social Links Styles */
 .social-links {
     margin-bottom: 20px;
-    text-align: center; /* Center social links on small screens */
 }
 
 .social-links a {
+    display: inline-block;
     margin-right: 10px;
 }
 
 .social-links img {
-    width: 25px; /* Adjust size for mobile */
-    height: 25px; /* Adjust size for mobile */
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
 
 /* Sections Styles */
 section {
-    padding: 40px 10px; /* Reduced padding for mobile */
+    padding: 60px 20px;
 }
 
 h2 {
@@ -159,6 +139,7 @@ h2 {
 #experience ul {
     list-style: none;
     padding: 0;
+    margin-left: 0; /* Reset margin to avoid any additional spacing */
 }
 
 #experience li {
@@ -196,7 +177,8 @@ h2 {
 
 /* Vertical line before content */
 .experience-content {
-    margin-left: 120px; /* Adjust margin-left for mobile */
+    margin-left: 160px; /* Ensure content starts 150px from the left of the page */
+    flex: 1;
     position: relative;
     padding-left: 20px; /* Add padding to separate content from the vertical line */
 }
@@ -211,25 +193,18 @@ h2 {
     background-color: black; /* Change to black color for the vertical line */
 }
 
-/* Ensure vertical line is visible on smaller screens */
-@media (max-width: 768px) {
-    .experience-content::before {
-        display: none; /* Hide vertical line on smaller screens */
-    }
-}
-
 #experience div {
     line-height: 1.5; /* Improve readability */
 }
 
 #experience div strong {
     display: block;
-    font-size: 1.1em; /* Adjust font size for mobile */
+    font-size: 1.2em;
 }
 
 #experience div p {
     margin: 0;
-    font-size: 0.9em; /* Adjust font size for mobile */
+    font-size: 1em;
     color: #666;
 }
 
@@ -238,6 +213,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center; /* Center align gallery items */
 }
 
 #photos img {
@@ -247,16 +223,26 @@ h2 {
     border-radius: 8px;
 }
 
-/* Photo item styles */
+/* Navigation Text Spacing */
+.nav-link {
+    padding: 10px 20px;
+}
+
+/* Spacing Adjustment */
+.profile-info p, .experience-logo {
+    margin: 20px 0;
+}
+
 .photo-item {
     text-align: center;
     margin-bottom: 20px; /* Space between each photo item */
 }
 
 .photo-item img {
-    width: 100%; /* Full width for responsive images */
-    height: auto; /* Maintain aspect ratio */
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
     max-width: 100%; /* Ensure image scales down if needed */
+    max-height: 100%; /* Ensure image scales down if needed */
     display: block;
     margin: 0 auto;
     border-radius: 8px;
@@ -268,15 +254,49 @@ h2 {
     color: #666;
 }
 
-/* Navigation Text Spacing */
-.nav-link {
-    padding: 10px 15px; /* Adjusted padding for mobile */
-}
-
 /* Footer (if needed) */
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
     color: white;
+}
+
+/* Mobile Compatibility */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack items vertically in the About Me section */
+    }
+
+    .profile-photo img {
+        width: 150px; /* Adjust for smaller screens */
+        height: 150px; /* Adjust for smaller screens */
+    }
+
+    .about-content {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #photos img {
+        width: 150px; /* Adjust photo size for smaller screens */
+        height: 100px; /* Adjust photo size for smaller screens */
+    }
+
+    .photo-item img {
+        width: 250px; /* Adjust photo size for smaller screens */
+        height: 150px; /* Adjust photo size for smaller screens */
+    }
+
+    footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
