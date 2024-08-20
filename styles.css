@@ -157,27 +157,33 @@ h2 {
     margin-bottom: 15px;
 }
 
-
-/* Experience Section */
 #experience ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: 120px; /* Ensures content starts 120px from the left */
 }
 
 #experience li {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 20px;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-/* Logo Container */
 .experience-logo {
-    width: 80px; /* Fixed width to ensure consistent alignment */
-    margin-right: 20px; /* Space between logo and text */
-    flex-shrink: 0; /* Prevent the logo from shrinking */
-    object-fit: contain; /* Ensures logos of different sizes are contained within the specified width */
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.experience-logo.tedx-logo {
+    width: 100px;
+    height: 50px;
+}
+
+/* Ensure the content aligns after the logo consistently */
+.experience-content {
+    padding-left: 15px;
+    flex: 1;
 }
 
 /* Adjust the content positioning */
