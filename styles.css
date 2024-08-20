@@ -200,10 +200,10 @@ h2 {
 
 /* Vertical line before content */
 .experience-content {
-    margin-left: 180px; /* Ensure content starts 150px from the left of the page */
+    margin-left: 160px; /* Ensure content starts 150px from the left of the page */
     flex: 1;
     position: relative;
-    padding-left: 30px; /* Add padding to separate content from the vertical line */
+    padding-left: 20px; /* Add padding to separate content from the vertical line */
 }
 
 .experience-content::before {
@@ -213,7 +213,7 @@ h2 {
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #f3c832; /* Yellowish color for the vertical line */
+    background-color: black; /* Change to black color for the vertical line */
 }
 
 #experience div {
