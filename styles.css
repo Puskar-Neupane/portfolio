@@ -321,8 +321,8 @@ section {
 }
 
 .photo-item img {
-    width: 500px !important;
-    height: 400px !important;
+    width: 450px !important;
+    height: 350px !important;
     object-fit: cover;
     display: block;
     margin: 0 auto;
