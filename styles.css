@@ -149,10 +149,14 @@ section {
 }
 
 h2 {
+    font-size: 36px; /* Increase the heading size */
+    font-weight: bold; /* Make the heading bold */
+    letter-spacing: 1px; /* Add space between letters */
     border-bottom: 2px solid #f3c832; /* Yellowish color for section headings */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
 
 section {
     padding-left: 30px; /* Increase this value to push content further from the left */
