@@ -145,7 +145,7 @@ nav a:hover {
 
 /* Sections Styles */
 section {
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 h2 {
@@ -322,7 +322,7 @@ section {
 
 .photo-item img {
     width: 500px !important;
-    height: 420px !important;
+    height: 400px !important;
     object-fit: cover;
     display: block;
     margin: 0 auto;
