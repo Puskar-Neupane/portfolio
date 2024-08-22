@@ -149,9 +149,9 @@ section {
 }
 
 h2 {
-    font-size: 36px; /* Increase the heading size */
+    font-size: 30px; /* Increase the heading size */
     font-weight: bold; /* Make the heading bold */
-    letter-spacing: 1px; /* Add space between letters */
+    letter-spacing: 0.5px; /* Add space between letters */
     border-bottom: 2px solid #f3c832; /* Yellowish color for section headings */
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -322,7 +322,7 @@ section {
 
 .photo-item img {
     width: 500px !important;
-    height: 450px !important;
+    height: 420px !important;
     object-fit: cover;
     display: block;
     margin: 0 auto;
