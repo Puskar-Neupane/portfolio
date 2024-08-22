@@ -318,7 +318,7 @@ section {
 
 .photo-item img {
     width: 500px !important;
-    height: 300px !important;
+    height: 400px !important;
     object-fit: cover;
     display: block;
     margin: 0 auto;
