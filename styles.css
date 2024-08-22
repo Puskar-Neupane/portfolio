@@ -303,24 +303,27 @@ section {
     margin: 15px 0;
 }
 
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .photo-item {
     text-align: center;
-    margin-bottom: 60px; /* Space between each photo item */
+    margin-bottom: 60px;
+    flex: 1 1 500px;
+    max-width: 500px;
 }
 
 .photo-item img {
-    width: 100%; /* Allow images to scale based on their container */
-    max-width: 500px; /* Maximum width as needed */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
     border-radius: 8px;
-}
-
-.photo-item p {
-    margin-top: 10px; /* Space between the image and the description */
-    font-style: italic;
-    color: #666;
 }
 
 /* Footer (if needed) */
