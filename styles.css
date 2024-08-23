@@ -317,12 +317,12 @@ section {
     flex: 1 1 500px;
     max-width: 500px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .photo-item img {
-    width: 450px !important;
-    height: 300px !important;
+    width: 400px !important;
+    height: 270px !important;
     object-fit: cover;
     display: block;
     margin: 0 auto;
