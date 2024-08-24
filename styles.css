@@ -325,7 +325,7 @@ section {
     height: 270px !important;
     object-fit: cover;
     display: block;
-    margin: 45px;
+    margin: 35px !important;
     border-radius: 8px;
 }
 
