@@ -195,28 +195,39 @@ section {
 
 /* Experience Section */
 #experience ul {
-    list-style: none; /* Removes default list styling */
+    list-style: none;
     padding: 0;
     margin-left: 0; /* Removes default left margin */
 }
 
 #experience li {
-    margin-bottom: 20px; /* Space between main list items */
-    display: flex; /* Aligns image and content horizontally */
-    align-items: center; /* Vertically centers the image and content */
-    position: relative; /* Ensures any absolutely positioned child elements are relative to this */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 #experience li ul {
-    list-style-type: disc; /* Uses bullet points for nested lists */
+    list-style-type: none; /* Removes default bullets */
     margin: 0;
     padding: 0 0 0 20px; /* Indents nested lists */
 }
 
 #experience li ul li {
-    margin: 0; /* Removes space between nested list items */
-    padding: 0; /* Removes padding for nested list items */
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 20px; /* Indents text to make space for the arrow */
 }
+
+#experience li ul li:before {
+    content: "\2192"; /* Unicode for a right arrow (→) */
+    position: absolute;
+    left: 0; /* Aligns the arrow to the left of the text */
+    top: 0;
+    font-size: 16px; /* Adjust size as needed */
+    color: #000; /* Change color to match your design */
+}
+
 
 
 
