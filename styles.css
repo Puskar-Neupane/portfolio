@@ -195,28 +195,29 @@ section {
 
 /* Experience Section */
 #experience ul {
-    list-style: none;
+    list-style: none; /* Removes default list styling */
     padding: 0;
-    margin-left: 0; /* Reset margin to avoid any additional spacing */
+    margin-left: 0; /* Removes default left margin */
 }
 
 #experience li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    margin-bottom: 20px; /* Space between main list items */
+    display: flex; /* Aligns image and content horizontally */
+    align-items: center; /* Vertically centers the image and content */
+    position: relative; /* Ensures any absolutely positioned child elements are relative to this */
 }
 
 #experience li ul {
-    list-style-type: disc; /* Ensures bullets are used */
+    list-style-type: disc; /* Uses bullet points for nested lists */
     margin: 0;
-    padding: 0 0 0 20px; /* Indent nested lists */
+    padding: 0 0 0 20px; /* Indents nested lists */
 }
 
 #experience li ul li {
-            margin: 0; /* Remove space between nested list items */
-            padding: 0; /* Remove padding for nested list items */
-        }
+    margin: 0; /* Removes space between nested list items */
+    padding: 0; /* Removes padding for nested list items */
+}
+
 
 
 .experience-logo {
