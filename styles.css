@@ -237,6 +237,13 @@ section {
 }
 
 /* Specific logo sizes */
+
+.k&a-logo {
+    width: 100px; /* Adjust as needed */
+    height: 120px;
+    left: 40px;
+}
+
 .tu-logo {
     width: 100px; /* Adjust as needed */
     height: 120px;
